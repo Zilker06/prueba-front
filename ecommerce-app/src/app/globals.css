@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #e2b1e9;
+}
+
+:root {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Fondo general */
+body {
+  background: linear-gradient(135deg, #f0f4f8 0%, #e9ecef 100%);
+  color: #22223b;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+/* Tarjetas */
+.bg-white {
+  background: #fff;
+  box-shadow: 0 4px 24px 0 rgba(34, 34, 59, 0.08);
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"],
+input[type="name"] {
+  background: #f7fafc;
+  border: 1px solid #d1d5db;
+  color: #22223b;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="name"]:focus {
+  border-color: #2563eb;
+  outline: none;
+  background: #fff;
+}
+
+/* Botones */
+button {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.bg-blue-600 {
+  background: #2563eb;
+}
+
+.bg-blue-600:hover {
+  background: #1d4ed8;
+}
+
+.bg-red-500 {
+  background: #ef4444;
+}
+
+.bg-red-500:hover {
+  background: #dc2626;
+}
+
+/* Títulos */
+h2 {
+  color: #22223b;
+}
+
+/* Placeholder color */
+input::placeholder {
+  color: #a0aec0;
+  opacity: 1;
+}
+
+/* Boton de google */
+
